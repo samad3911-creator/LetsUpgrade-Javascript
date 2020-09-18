@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment1</title>
+
+    <style>
+    .search{
+        margin-top: 150px;
+        margin-left: 40%;
+        background-color: white;
+
+    }
+
+    .table {
+        width: 50%;
+        margin-top: 20px;
+      }
+
+      .tableDiv{
+          margin-top: 20px;
+          margin-left: 30%;
+      }
+
+      th,
+      td {
+        height: 40px;
+        text-align: center;
+        padding: 5px;
+      }
+
+
+</style>
+</head>
+<body>
+    <div class="search">
+        <input type="text" placeholder="Search for name or city" id="searchInput" onkeyup="searchByNameOrCity()">
+    </div>
+    <div class="tableDiv">
+    <table border="1" class="table" cellspacing="0">
+        <thead>
+          <tr>
+            <th>Sr no</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>City</th>
+            <th>Salary</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="tdata"></tbody>
+      </table>
+
+    </div>
+
+    <script src="assignment.js"></script>
+</body>
+</html>
