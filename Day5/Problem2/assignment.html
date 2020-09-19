@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Portal</title>
+    <style>
+        .form{
+           margin-top: 100px;
+        }
+        .tableDiv{
+          margin-top: 20px;
+          margin-left: 30%;
+      }
+    </style>
+</head>
+<body>
+    <div class="form">
+      <form onsubmit="addBus(event)">
+        <label>Name: </label>
+        <input type="text" placeholder="Enter Bus Name" id="name">
+        <br>
+        <br>
+        <label>Source: </label>
+        <input type="text" placeholder="Enter the source" id="source">
+        <br>
+        <br>
+        <label>Destination: </label>
+        <input type="text" placeholder="Enter the destination" id="destination">
+        <br>
+        <br>
+        <label>Bus Number: </label>
+        <input type="text" placeholder="Enter bus number" id="bus number">
+        <br>
+        <br>
+        <label>Bus Capacity: </label>
+        <input type="text" placeholder="Enter bus capacity" id="capacity">
+        <br>
+        <br>
+        <button type="submit">Add Bus</button>
+    
+      </form>
+    </div>
+
+    <div class="tableDiv">
+
+      <input type="text" placeholder="Search by source or destination" onkeyup="searchBySourceOrDestination()" id="searchInput">
+      <br>
+      <br>
+        <table border="1" class="table" cellspacing="0">
+            <thead>
+              <tr>
+                <th>Sr no</th>
+                <th>Name</th>
+                <th>Source</th>
+                <th>Destination</th>
+                <th>Bus Number</th>
+                <th>Bus Capacity</th>
+              </tr>
+            </thead>
+            <tbody id="tdata"></tbody>
+          </table>
+    
+        </div>
+
+    <script src="assignment.js"></script>
+    
+
+</body>
+</html>
